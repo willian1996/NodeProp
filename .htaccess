@@ -1,0 +1,8 @@
+RewriteEngine On
+
+RewriteRule ^admin$ admin.php [NC,L]
+RewriteRule ^home$ index.php [NC,L]
+RewriteRule ^contato$ contato.php [NC,L]
+RewriteRule ^quemsomos quemsomos.php [NC,L]
+RewriteRule ^servicos servicos.php [NC,L]
+RewriteRule ^relatorios(.*)$ classes/Relatorios.php [NC,L]
