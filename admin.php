@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="css/sb-admin.css">
 </head>
 <body>
-
+ 
     <!-- GRAFICO DE LINHA-->
         <div class="card mb-3">
           <div class="card-header">
 
-            Visitas a loja</div>
+            Visitas nas ultimas 24 horas</div>
           <div class="card-body">
             <canvas id="myAreaChart" width="100%" height="30"></canvas>
           </div>
@@ -27,7 +27,7 @@
             <div class="card mb-3">
               <div class="card-header">
 
-                Finalizaram a compra</div>
+                Visitas na última semana</div>
               <div class="card-body">
                 <canvas id="myBarChart" width="100%" height="50"></canvas>
               </div>

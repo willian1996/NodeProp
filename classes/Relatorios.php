@@ -26,7 +26,7 @@ class Relatorios{
     }
 
     private function trafego_por_hora($param = null){
-        $periodo = date('Y-m-d H:i:s', strtotime($param, strtotime($this->data_atual)));
+        $periodo = date('Y-m-d H:i:s', strtotime($param));
 
         $sql = "SELECT HOUR(data) as hora, COUNT(id) as views "
              . "FROM trafego "
@@ -49,6 +49,26 @@ class Relatorios{
         $final = array_replace($horas, $dados);
 
         echo json_encode($final);
+    }
+    
+    public function trafego_semanal(){
+        $periodo = date('Y-m-d H:i:s', strtotime('-7 days'));
+        
+        $sql = "SELECT DAYNAME(data) as dia, COUNT(id) as views "
+              ."FROM trafego "
+              ."WHERE data >= '{$periodo}' "
+              ."GROUP BY DAYNAME(data) "
+              ."ORDER BY data";
+              
+        $query = $this->db->query($sql);
+        $result = $query->fetchAll(PDO::FETCH_OBJ);
+        
+        foreach($result as $res){
+            $dados[$res->dia] = $res->views;
+
+        }
+        
+        echo json_encode($dados);
     }
 
 
