@@ -125,13 +125,13 @@ img{
 }
 .menu li{
     padding: 1.5%;
-    
+
 }
 .menu li a{
     font-size: 2em;
     color: #fff;
     padding: 1.5% 3%;
-    
+
 }
 .menu li a:hover{
     border: 1px solid #da6709;
@@ -226,7 +226,7 @@ inner h4{
     text-align: center;
     padding: 3% 4%;
     background-color: #130400;
-    
+
 }
 .newslatter h2{
     font-size: 1.5em;
@@ -279,6 +279,11 @@ inner h4{
     margin-top: 2%;
     color: rgba(255,255,255,0.7);
 }
+
+#graficos{
+    width: 95%;
+    margin: 0 auto;
+}
 /*MOBILE FIRST*/
 /*SMALL DEVICES - SMARTPHONES*/
 @media screen and (min-width: 480px){
@@ -289,7 +294,7 @@ inner h4{
     }
     .btn-cadastrar, .btn-sobre{
         font-size: 2em;
-    }  
+    }
 }
 
 /*SMALL DEVICES - TABLETS*/
@@ -389,5 +394,5 @@ inner h4{
         border: none;
         color: #da6709;
     }
-    
+
 }

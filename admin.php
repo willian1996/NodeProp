@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="">
 <head>
@@ -10,6 +11,7 @@
 <body>
  
     <!-- GRAFICO DE LINHA-->
+
         <div class="card mb-3">
           <div class="card-header">
 
@@ -21,9 +23,15 @@
         </div>
 
 
+
+
+
+
+
+
     <!-- GRAFICO DE BARRAS -->
         <div class="row">
-          <div class="col-lg-8">
+          <div class="col-lg-6">
             <div class="card mb-3">
               <div class="card-header">
 
@@ -34,8 +42,26 @@
               <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
             </div>
           </div>
-            <!-- GRAFICOS DE PIZZA-->
-          <div class="col-lg-4">
+
+        <!-- GRAFICO DE MENSAL-->
+
+
+          <div class="col-lg-6">
+        <div class="card mb-3">
+          <div class="card-header">
+
+            Visitas no ultimo mes</div>
+          <div class="card-body">
+             <canvas id="grafico"></canvas>
+          </div>
+          <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+        </div>
+        </div>
+            </div>
+
+
+    <!-- GRAFICOS DE PIZZA-->
+    <div class="col-lg-6">
             <div class="card mb-3">
               <div class="card-header">
 
@@ -45,7 +71,6 @@
               </div>
               <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
             </div>
-          </div>
         </div>
 
 
@@ -66,5 +91,8 @@
   <script src="js/chart-area-demo.js"></script>
   <script src="js/chart-bar-demo.js"></script>
   <script src="js/chart-pie-demo.js"></script>
+  <script src="js/chart-mensal.js"></script>
 </body>
 </html>
+
+
